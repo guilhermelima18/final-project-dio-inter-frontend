@@ -1,18 +1,23 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
+import logoImg from "../../assets/logo.png";
 import styles from "./styles.module.scss";
 
 const Header = () => {
+  const { pathname } = useLocation();
+
   return (
     <header className={styles.header}>
       <nav className={styles.nav}>
-        <h1>DIO | Shopping</h1>
+        <img src={logoImg} alt="Logo DIO Shopping" />
         <div className={styles.menuNavigation}>
           <Link to="/">
-            <a>Home</a>
+            <a className={pathname === "/" ? styles.active : ""}>Home</a>
           </Link>
-          <Link to="/">
-            <a>Contact</a>
+          <Link to="/contact">
+            <a className={pathname === "/contact" ? styles.active : ""}>
+              Contact
+            </a>
           </Link>
         </div>
       </nav>

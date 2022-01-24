@@ -5,6 +5,7 @@ interface MessageProps {
   email: string;
   message: string;
   created_at: string;
+  dataFormatted: string;
 }
 
 interface MessageCardsProps {
@@ -14,13 +15,17 @@ interface MessageCardsProps {
 const MessageCards = ({ messages }: MessageCardsProps) => {
   return (
     <>
-      {messages.map(({ id, message, email, created_at }) => (
-        <div key={id} className={styles.cards}>
-          <h1>{email}</h1>
-          <p>{message}</p>
-          <span>{created_at}</span>
-        </div>
-      ))}
+      {messages.length === 0 ? (
+        <h3>Nenhuma mensagem cadastrada!</h3>
+      ) : (
+        messages.map(({ id, message, email, dataFormatted }) => (
+          <div key={id} className={styles.cards}>
+            <h1>E-mail: {email}</h1>
+            <p>Mensagem: {message}</p>
+            <span>{dataFormatted}</span>
+          </div>
+        ))
+      )}
     </>
   );
 };
