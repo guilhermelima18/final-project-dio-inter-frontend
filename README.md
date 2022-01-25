@@ -1,5 +1,5 @@
 <h1 align="center">
-  <img alt="DIO Shopping" title="Sneakers" src="https://i.imgur.com/9Rgw1Pa.png" width="220px" />
+  <img alt="DIO Shopping" title="DIO Shopping" src="https://i.imgur.com/9Rgw1Pa.png" width="220px" />
 </h1>
 
 <p align="center">
@@ -17,7 +17,7 @@
 <br>
 
 <p align="center">
-  <img alt="Desafio do Front-end Mentor" src="https://i.imgur.com/YvRRsDs.jpg" width="100%">
+  <img alt="Projeto final do bootcamp Inter Front-end da Digital Innovation One" src="https://i.imgur.com/3b85Cio.png" width="100%">
 </p>
 
 ## 🚀 Tecnologias
@@ -26,12 +26,14 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 - Typescript
 - React.JS (Functional Components, Hooks)
-- Styled Components
-- JSON Fake API
+- SASS
+- API feita em Node.JS com Express
+- Banco de dados SQLite
+- TypeORM
 
 ## 💻 Projeto
 
-Desafio do Front-end Mentor criar uma página de produto em um E-commerce 💰
+Projeto final do bootcamp Inter Front-end da Digital Innovation One 💰
 
 ## :memo: Licença
 
